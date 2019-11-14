@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.fdmgroup.cwaf.Member;
 import com.fdmgroup.cwaf.MemberDAO;
 
 public class MemberDAOTest {
@@ -30,8 +31,10 @@ public class MemberDAOTest {
 	public void tearDown() throws Exception {
 	}
 
+	private Member userToAdd = new Member();
+	
 	@Test
-	public void test() {
+	public void testAddMemberToDatabase() {
 		fail("Not yet implemented");
 	}
 

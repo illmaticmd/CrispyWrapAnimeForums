@@ -19,17 +19,19 @@ public class Member {
 	@Column(name="last_name")
 	private String lastName;
 	private String role;
+	private String email;
 	
 	public Member() {
 		
 	}
 	
-	public Member(String username, String password, String firstName, String lastName) {
+	public Member(String username, String password, String firstName, String lastName, String email) {
 		super();
 		this.username = username;
 		this.password = password;
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.email = email;
 	}
 
 	public String getUsername() {

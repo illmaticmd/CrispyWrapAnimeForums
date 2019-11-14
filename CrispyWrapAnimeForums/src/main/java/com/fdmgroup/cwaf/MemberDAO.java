@@ -11,5 +11,5 @@ public interface MemberDAO {
 
 	void updateMember(Member user);
 
-	List<Member> lisMembers();
+	List<Member> listMembers();
 }
