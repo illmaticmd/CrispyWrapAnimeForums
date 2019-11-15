@@ -14,7 +14,7 @@ import com.fdmgroup.cwaf.MemberDAO;
 public class MemberDAOTest {
 
 	private MemberDAO classUnderTest;
-	
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -31,8 +31,8 @@ public class MemberDAOTest {
 	public void tearDown() throws Exception {
 	}
 
-	private Member userToAdd = new Member();
-	
+	private Member memberToAdd = new Member();
+
 	@Test
 	public void testAddMemberToDatabase() {
 		fail("Not yet implemented");
