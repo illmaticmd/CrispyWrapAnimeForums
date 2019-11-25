@@ -28,14 +28,13 @@
 		</div>
 	</div>
 	<div class="center">
-		<p>Register!</p>
-		<form action="register" method="POST">
+		<p>Login!</p>
+		<form action="login" method="POST">
 			<div class="flexContainer center centerItems">
 				<p>Username:&nbsp;</p>
 				<p></p>
 				<input type="text" name="username" placeholder="Username" />
 			</div>
-
 			<div class="flexContainer center centerItems">
 				<p>Password:&nbsp;</p>
 				<input type="password" name="password" placeholder="Password" />

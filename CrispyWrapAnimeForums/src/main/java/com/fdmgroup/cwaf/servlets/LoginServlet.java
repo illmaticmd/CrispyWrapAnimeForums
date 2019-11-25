@@ -24,13 +24,14 @@ public class LoginServlet extends HttpServlet {
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
 
-		HttpSession session = req.getSession();
+
 		Member user = new Member();
 
 		user.setUsername(username);
 		user.setPassword(password);
-
-		if (uv.validateUser(user) == false) {
+		user=uv.validateUserLogin(user);
+		if (user!=null) {
+			HttpSession session = req.getSession();
 			session.setAttribute("user", user);
 			req.getRequestDispatcher("WEB-INF/views/userProfile.jsp").forward(req, resp); // how to send on to another
 																							// page

@@ -58,18 +58,34 @@ body {
 	border-left-style: solid;
 }
 
-.forumsections .titleofSection{
-		background-color: #cf4b4b;
+.forumsections .titleofSection {
+	background-color: #cf4b4b;
 }
 
 .categories {
 	padding-left: 10px;
 }
-.postNum{
+
+.categories a:link, .categories a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.categories a:hover {
+
+	color: white;
+}
+
+.postNum {
 	padding-right: 10px;
 }
-.sectionTitle{
+
+.sectionTitle {
 	padding-left: 5px;
+}
+
+.descriptions {
+	width: 75%;
 }
 
 #bannernav .cat1 a:link, #bannernav .cat1 a:visited {
@@ -92,19 +108,22 @@ body {
 	display: inline-block;
 }
 
-footer{
-	border-top-width:1px;
+footer {
+	border-top-width: 1px;
 	border-top-style: solid;
 	color: white;
 	background-color: black;
 }
-footer a:link, footer a:visited{
+
+footer a:link, footer a:visited {
 	text-decoration: none;
 	color: gray;
 }
-footer a:hover{
-  color: #ff8080;
+
+footer a:hover {
+	color: #ff8080;
 }
-.footercontent{
+
+.footercontent {
 	margin: 0px 3px 0px 3px;
 }

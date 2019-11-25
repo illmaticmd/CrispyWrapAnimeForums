@@ -1,6 +1,7 @@
 package com.fdmgroup.cwaf.servlets;
 
 import java.io.IOException;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -35,8 +36,10 @@ public class RegisterServlet extends HttpServlet {
 		user.setPassword(password);
 		user.setFirstName(firstname);
 		user.setLastName(lastname);
+		user.setEmail(email);
 		
-		if (uv.validateUser(user) == true) {
+		Map<String, String> error = uv.validateUserRegistration(user);
+		if ( error.size() == 0 ) /*(uv.validateUserLogin(user) == null)*/ {
 			ur.registerUser(user);
 			session.setAttribute("user", user);
 			req.getRequestDispatcher("WEB-INF/views/userProfile.jsp").forward(req, resp); // how to send on to another
