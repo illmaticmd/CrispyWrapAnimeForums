@@ -4,17 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="cwaf.css" />
+<link rel="stylesheet" type="text/css" href="resources/cwaf.css" />
 <title>Anime Page</title>
 </head>
 <body>
 	<div id="bannernav">
 		<div class="logo center tabs">
-			<a href="home.html"><img src="cwafbanner2.png" alt="CWAF logo"></a>
+			<a href="home"><img src="resources/cwafbanner2.png" alt="CWAF logo"></a>
 		</div>
 		<div class="tabs flexContainer center">
 			<div class="cat1">
-				<a href="home.html"><p>Home</p></a>
+				<a href="home"><p>Home</p></a>
 			</div>
 			<div class="cat1">
 				<a href="userProfile"><p>Profile</p></a>
@@ -27,7 +27,7 @@
 			</div>
 		</div>
 	</div>
-	<form action="login" method="GET">
+	<form action="post" method="GET">
 		<input type="submit" value="+ Post New Thread!" />
 	</form>
 	</br>
@@ -41,7 +41,7 @@
 		</div>
 		<div class="flexContainer catsec2">
 			<div class="categories">
-				<a href=""><h4>Music</h4></a>
+				<a href=""><h4>A title for a thread</h4></a>
 				<p class="descriptions">Lorem ipsum dolor sit amet, consectetur
 					adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 					dolore magna aliqua.</p>
@@ -51,55 +51,12 @@
 				<p>posts</p>
 			</div>
 		</div>
-		<div class="flexContainer catsec">
-			<div class="categories">
-				<a href=""><h4>Sports</h4></a>
-				<p class="descriptions">Ornare quam viverra orci sagittis eu
-					volutpat odio facilisis mauris sit amet.</p>
-			</div>
-			<div class="postNum right">
-				<h5>3</h5>
-				<p>posts</p>
-			</div>
-		</div>
-		<div class="flexContainer catsec2">
-			<div class="categories">
-				<a href=""><h4>Current Events</h4></a>
-				<p class="descriptions">Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua.</p>
-			</div>
-			<div class="postNum right">
-				<h5>963</h5>
-				<p>posts</p>
-			</div>
-		</div>
-		<div class="flexContainer catsec">
-			<div class="categories">
-				<a href=""><h4>Gaming</h4></a>
-				<p class="descriptions">Tellus id interdum velit laoreet id
-					donec ultrices tincidunt arcu.</p>
-			</div>
-			<div class="postNum right">
-				<h5>64</h5>
-				<p>posts</p>
-			</div>
-		</div>
-		<div class="flexContainer catsec">
-			<div class="categories">
-				<a href=""><h4>Computers & Technology</h4></a>
-				<p class="descriptions">Cras semper auctor neque vitae tempus
-					quam pellentesque nec nam aliquam sem et tortor consequat.</p>
-			</div>
-			<div class="postNum right">
-				<h5>639</h5>
-				<p>posts</p>
-			</div>
-		</div>
 	</div>
 
 	</br>
-	<input type="submit" value="+ Post New Thread!" />
+	<form action="post" method="GET">
+		<input type="submit" value="+ Post New Thread!" />
+	</form>
 </body>
 <footer>
 <div class="flexContainer center">

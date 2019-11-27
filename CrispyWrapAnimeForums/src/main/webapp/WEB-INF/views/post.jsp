@@ -5,12 +5,13 @@
 <head>
 <link rel="stylesheet" type="text/css" href="resources/cwaf.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>CWAF Login Page</title>
+<title>Post A Thread</title>
 </head>
 <body>
 	<div id="bannernav">
 		<div class="logo center tabs">
-			<a href="home"><img src="resources/cwafbanner2.png" alt="CWAF logo"></a>
+			<a href="home"><img src="resources/cwafbanner2.png"
+				alt="CWAF logo"></a>
 		</div>
 		<div class="tabs flexContainer center">
 			<div class="cat1">
@@ -27,36 +28,19 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="center">
-		<p>Login!</p>
-		<form action="login" method="POST">
+		<h2>Compose thread post:</h2>
+		<form action="anime">
 			<div class="flexContainer center centerItems">
-				<p>Username:&nbsp;</p>
-				<p></p>
-				<input type="text" name="username" placeholder="Username" />
+				<p>Title:&nbsp;</p>
+				<input type="title" name="title" placeholder="title of thread" />
 			</div>
-			<div class="flexContainer center centerItems">
-				<p>Password:&nbsp;</p>
-				<input type="password" name="password" placeholder="Password" />
-			</div>
-			<input type="submit" value="Sign-in!" />
+			<textarea name="body" cols="50" rows="5">
+		Enter some text...
+		</textarea>
+			<br /> <input type="submit" value=" Sumbit Post" />
 		</form>
 	</div>
 </body>
-<footer>
-<div class="flexContainer center">
-	<div class="footercontent">
-		<p>Created by: McDesmond Duru</p>
-	</div>
-	<div class="footercontent">
-		<a href="" target="_blank"><p>Terms of Use</p></a>
-	</div>
-	<div class="footercontent">
-		<a href="" target="_blank"><p>Privacy</p></a>
-	</div>
-	<div class="footercontent">
-		<a href="" target="_blank"><p>Contact Us</p></a>
-	</div>
-</div>
-</footer>
 </html>

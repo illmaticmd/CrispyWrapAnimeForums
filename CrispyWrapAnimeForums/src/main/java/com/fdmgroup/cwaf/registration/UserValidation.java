@@ -3,13 +3,17 @@ package com.fdmgroup.cwaf.registration;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.fdmgroup.cwaf.JPAMemberDAO;
 import com.fdmgroup.cwaf.Member;
 import com.fdmgroup.cwaf.MemberDAO;
 
+@Component
 public class UserValidation {
-
-	private MemberDAO dao = new JPAMemberDAO();
+	@Autowired
+	private MemberDAO dao; // = new JPAMemberDAO()
 
 	public Member validateUserLogin(Member user) {
 		Member userSearch = dao.getMember(user.getUsername());
@@ -19,11 +23,11 @@ public class UserValidation {
 		return null;
 	}
 
-	public Map<String, String> validateUserRegistration(Member user /*String passwordConfirm*/) {
+	public Map<String, String> validateUserRegistration(Member user /* String passwordConfirm */) {
 		Map<String, String> errors = new HashMap<>();
-//		if (!user.getPassword().equals(passwordConfirm)) {
-//			errors.put("passwordError", "Passwords did not match!");
-//		}
+		// if (!user.getPassword().equals(passwordConfirm)) {
+		// errors.put("passwordError", "Passwords did not match!");
+		// }
 		if (user.getUsername().isEmpty()) {
 			errors.put("usernameError", "Username cannot be empty!");
 		} else if (dao.getMember(user.getUsername()) != null) {

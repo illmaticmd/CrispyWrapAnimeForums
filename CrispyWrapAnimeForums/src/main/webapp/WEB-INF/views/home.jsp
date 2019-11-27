@@ -1,0 +1,196 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="resources/cwaf.css" />
+<title>Crispy Wrap Anime Forums</title>
+</head>
+<body>
+	<div id="bannernav">
+		<div class="logo center tabs">
+			<a href="home"><img src="resources/cwafbanner2.png"
+				alt="CWAF logo"></a>
+		</div>
+		<div class="tabs flexContainer center">
+			<div class="cat1">
+				<a href="home"><p>Home</p></a>
+			</div>
+			<div class="cat1">
+				<a href="userProfile"><p>Profile</p></a>
+			</div>
+			<div class="cat1">
+				<a href="login"><p>Login</p></a>
+			</div>
+			<div class="cat1">
+				<a href="register"><p>Register</p></a>
+			</div>
+		</div>
+	</div>
+	<div class="flexContainer centerItems">
+		<div class="left">
+			<h1>C.W.A.F.</h1>
+		</div>
+		<div class="right">
+			<form action="https://www.google.com/search" method="GET"
+				target="_blank">
+				<input type="text" name="q" value="Anime!"
+					placeholder="or is there somethin else?" /> <input type="submit"
+					value="Google it~!" />
+			</form>
+		</div>
+	</div>
+	<div class="forumsections offtheMarginpls">
+		<div class="sectionTitle catsec titleofSection">
+			<h2>Anime & Manga</h2>
+		</div>
+		<div class="flexContainer catsec2">
+			<div class="categories">
+				<a href="anime"><h4>Anime</h4></a>
+				<p class="descriptions">Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Vulputate sapien nec sagittis aliquam
+					malesuada.</p>
+			</div>
+			<div class="postNum right">
+				<h5>367</h5>
+				<p>posts</p>
+			</div>
+		</div>
+		<div class="flexContainer catsec">
+			<div class="categories">
+				<a href="manga"><h4>Manga</h4></a>
+				<p class="descriptions">Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Aenean pharetra magna ac placerat vestibulum.</p>
+			</div>
+			<div class="postNum right">
+				<h5>112</h5>
+				<p>posts</p>
+			</div>
+		</div>
+	</div>
+	<div class="forumsections offtheMarginpls">
+		<div class="sectionTitle catsec titleofSection">
+			<h2>Creative Corner/Art</h2>
+		</div>
+		<div class="flexContainer catsec2">
+			<div class="categories">
+				<a href=""><h4>Writing</h4></a>
+				<p class="descriptions">Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Vulputate sapien nec sagittis aliquam
+					malesuada.</p>
+			</div>
+			<div class="postNum right">
+				<h5>81</h5>
+				<p>posts</p>
+			</div>
+		</div>
+		<div class="flexContainer catsec">
+			<div class="categories">
+				<a href=""><h4>Drawing/Painting</h4></a>
+				<p class="descriptions">Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Aenean pharetra magna ac placerat vestibulum.</p>
+			</div>
+			<div class="postNum right">
+				<h5>26</h5>
+				<p>posts</p>
+			</div>
+		</div>
+		<div class="flexContainer catsec">
+			<div class="categories">
+				<a href=""><h4>Computer Design</h4></a>
+				<p class="descriptions">Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Aenean pharetra magna ac placerat vestibulum.</p>
+			</div>
+			<div class="postNum right">
+				<h5>684</h5>
+				<p>posts</p>
+			</div>
+		</div>
+	</div>
+	<div class="forumsections offtheMarginpls">
+		<div class="sectionTitle catsec titleofSection">
+			<h2>General</h2>
+		</div>
+		<div class="flexContainer catsec2">
+			<div class="categories">
+				<a href=""><h4>Music</h4></a>
+				<p class="descriptions">Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua.</p>
+			</div>
+			<div class="postNum right">
+				<h5>333</h5>
+				<p>posts</p>
+			</div>
+		</div>
+		<div class="flexContainer catsec">
+			<div class="categories">
+				<a href=""><h4>Sports</h4></a>
+				<p class="descriptions">Ornare quam viverra orci sagittis eu
+					volutpat odio facilisis mauris sit amet.</p>
+			</div>
+			<div class="postNum right">
+				<h5>3</h5>
+				<p>posts</p>
+			</div>
+		</div>
+		<div class="flexContainer catsec2">
+			<div class="categories">
+				<a href=""><h4>Current Events</h4></a>
+				<p class="descriptions">Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua.</p>
+			</div>
+			<div class="postNum right">
+				<h5>963</h5>
+				<p>posts</p>
+			</div>
+		</div>
+		<div class="flexContainer catsec">
+			<div class="categories">
+				<a href=""><h4>Gaming</h4></a>
+				<p class="descriptions">Tellus id interdum velit laoreet id
+					donec ultrices tincidunt arcu.</p>
+			</div>
+			<div class="postNum right">
+				<h5>64</h5>
+				<p>posts</p>
+			</div>
+		</div>
+		<div class="flexContainer catsec">
+			<div class="categories">
+				<a href=""><h4>Computers & Technology</h4></a>
+				<p class="descriptions">Cras semper auctor neque vitae tempus
+					quam pellentesque nec nam aliquam sem et tortor consequat.</p>
+			</div>
+			<div class="postNum right">
+				<h5>639</h5>
+				<p>posts</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+<footer>
+	<div class="flexContainer center">
+		<div class="footercontent">
+			<p>Created by: McDesmond Duru</p>
+		</div>
+		<div class="footercontent">
+			<a href="" target="_blank"><p>Terms of Use</p></a>
+		</div>
+		<div class="footercontent">
+			<a href="" target="_blank"><p>Privacy</p></a>
+		</div>
+		<div class="footercontent">
+			<a href="" target="_blank"><p>Contact Us</p></a>
+		</div>
+	</div>
+</footer>
+</html>
