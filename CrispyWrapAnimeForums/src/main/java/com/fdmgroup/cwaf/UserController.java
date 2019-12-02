@@ -23,11 +23,15 @@ public class UserController {
 	@Autowired
 	private UserRegister ur;
 
-	@GetMapping("/home")
+	@GetMapping("/")
 	public String landingPage() {
 		return "home";
 	}
 
+	@GetMapping("/home")
+	public String returnHome() {
+		return "home";
+	}
 	@GetMapping("/userProfile")
 	public String home() {
 		return "userProfile";

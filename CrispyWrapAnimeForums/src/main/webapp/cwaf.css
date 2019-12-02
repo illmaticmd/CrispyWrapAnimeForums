@@ -72,8 +72,7 @@ body {
 }
 
 .categories a:hover {
-
-	color: white;
+	text-decoration: underline;
 }
 
 .postNum {

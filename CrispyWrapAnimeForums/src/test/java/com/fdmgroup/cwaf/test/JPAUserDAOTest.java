@@ -35,16 +35,50 @@ public class JPAUserDAOTest {
 	Member user1 = new Member();
 	Member memberToAdd = new Member();
 
+//	@Test
+//	public void testIfMemberDAOCanAddAndUpdateUsersInDatabase() {
+//		Member member = classUnderTest.getMember(memberToAdd.getUsername());
+//		assertNull(member);
+//
+//		memberToAdd.setUsername("someUser");
+//
+//		classUnderTest.addMember(memberToAdd);
+//		member = classUnderTest.getMember(memberToAdd.getUsername());
+//		assertEquals(memberToAdd, member);
+//
+//		memberToAdd.setUsername("someUsername");
+//		memberToAdd.setPassword("somePassword");
+//		memberToAdd.setEmail("someEmail");
+//		memberToAdd.setFirstName("memberFirstName");
+//		memberToAdd.setLastName("memberLastName");
+//
+//		classUnderTest.updateMember(memberToAdd);
+//		member = classUnderTest.getMember(memberToAdd.getUsername());
+//		assertEquals(memberToAdd, member);
+//
+//		// classUnderTest.removeMember(memberToAdd.getUsername());
+//		// assertNull(memberToAdd);
+//		//
+//
+//	}
+
 	@Test
-	public void testIfMemberDAOCanAddUpdateAndRemoveUsersFromDatabase() {
+	public void testIfMemberDoesNotExist() {
 		Member member = classUnderTest.getMember(memberToAdd.getUsername());
 		assertNull(member);
-		
+	}
+
+	@Test
+	public void testIfAddsMemberToDatabase() {
 		memberToAdd.setUsername("someUser");
-		
 		classUnderTest.addMember(memberToAdd);
-		member = classUnderTest.getMember(memberToAdd.getUsername());
+		Member member = classUnderTest.getMember(memberToAdd.getUsername());
 		assertEquals(memberToAdd, member);
+	}
+
+	@Test
+	public void testIfUpdatesMemberInDatabase() {
+		classUnderTest.addMember(memberToAdd);
 		
 		memberToAdd.setUsername("someUsername");
 		memberToAdd.setPassword("somePassword");
@@ -53,13 +87,14 @@ public class JPAUserDAOTest {
 		memberToAdd.setLastName("memberLastName");
 		
 		classUnderTest.updateMember(memberToAdd);
-		member = classUnderTest.getMember(memberToAdd.getUsername());
+		Member member = classUnderTest.getMember(memberToAdd.getUsername());
 		assertEquals(memberToAdd, member);
-		
-		
-		
-		
-
 	}
-
+	
+	@Test
+	public void testIfDeletesMemberFromDatabase() {
+		classUnderTest.addMember(memberToAdd);
+		classUnderTest.removeMember(memberToAdd.getUsername());
+		assertNull(memberToAdd);
+	}
 }

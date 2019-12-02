@@ -11,7 +11,7 @@
 			<property name="javax.persistence.jdbc.user" value="trainee1" />
 			<property name="javax.persistence.jdbc.password" value="!QAZSE4" />
 			<property name="javax.persistence.schema-generation.database.action"
-				value="create" />
+				value="validate" />
 			<property name="hibernate.dialect" value="	org.hibernate.dialect.Oracle10gDialect" />
 			<!-- NOTE – THIS SETTING WILL CAUSE JPA TO CREATE ALL THE NECESSARY TABLES 
 				FOR STORING- AFTER DROPPING ALL EXISTING TABLES WITH THOSE NAMES. ONLY USE 

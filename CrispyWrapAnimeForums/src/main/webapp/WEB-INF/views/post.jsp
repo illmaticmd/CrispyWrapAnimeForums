@@ -36,9 +36,12 @@
 				<p>Title:&nbsp;</p>
 				<input type="title" name="title" placeholder="title of thread" />
 			</div>
-			<textarea name="body" cols="50" rows="5">
+			<div class="flexContainer center">
+				<p>Body:&nbsp;</p>
+				<textarea name="body" cols="50" rows="5">
 		Enter some text...
 		</textarea>
+			</div>
 			<br /> <input type="submit" value=" Sumbit Post" />
 		</form>
 	</div>

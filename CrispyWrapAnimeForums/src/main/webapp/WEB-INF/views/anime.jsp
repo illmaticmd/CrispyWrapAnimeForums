@@ -41,14 +41,14 @@
 		</div>
 		<div class="flexContainer catsec2">
 			<div class="categories">
-				<a href=""><h4>A title for a thread</h4></a>
-				<p class="descriptions">Lorem ipsum dolor sit amet, consectetur
+				<a href=""><h4>[Thread Title Here]</h4></a>
+				<p class="descriptions">Preview of post here ipsum dolor sit amet, consectetur
 					adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua.</p>
+					dolore magna aliqua...</p>
 			</div>
 			<div class="postNum right">
-				<h5>333</h5>
-				<p>posts</p>
+				<h5>Post by mcd</h5>
+				<p>0 comments</p>
 			</div>
 		</div>
 	</div>

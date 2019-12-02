@@ -47,8 +47,8 @@
 					dolore magna aliqua.</p>
 			</div>
 			<div class="postNum right">
-				<h5>333</h5>
-				<p>posts</p>
+				<h5>Posted by mcd</h5>
+				<p>0 comments</p>
 			</div>
 		</div>
 	</div>
